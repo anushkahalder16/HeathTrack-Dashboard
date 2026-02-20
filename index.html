@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthTrack Dashboard</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>HealthTrack Dashboard</h1>
+            <p>Interactive web dashboard to monitor patient vitals and trends.</p>
+        </div>
+    </header>
 
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Project</h2>
+            <p>This dashboard tracks healthcare data including heart rate, blood pressure, oxygen levels, and temperature. Designed as a professional interactive web application for portfolio and project management showcase.</p>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard">
+        <div class="container">
+            <h2>Dashboard</h2>
+
+            <!-- Filters (Dummy for now) -->
+            <div class="filters">
+                <button>Last 7 Days</button>
+                <button>Last 30 Days</button>
+                <button>Custom Range</button>
+            </div>
+
+            <!-- Cards -->
+            <div class="cards-container">
+                <div class="project-card">
+                    <h3>Heart Rate</h3>
+                    <canvas id="heartRateChart"></canvas>
+                </div>
+
+                <div class="project-card">
+                    <h3>Blood Pressure</h3>
+                    <canvas id="bpChart"></canvas>
+                </div>
+
+                <div class="project-card">
+                    <h3>Oxygen Levels</h3>
+                    <canvas id="oxygenChart"></canvas>
+                </div>
+
+                <div class="project-card">
+                    <h3>Temperature</h3>
+                    <canvas id="tempChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:anushkahalder16@gmail.com">anushkahalder16@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/anushka-halder-5aa40a350" target="_blank">Profile</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Anushka Halder</p>
+        </div>
+    </footer>
+
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- JS Link -->
+    <script src="script.js"></script>
+</body>
+</html>
